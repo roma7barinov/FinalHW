@@ -1,5 +1,6 @@
 package lesson4;
 
+import javax.swing.*;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -15,7 +16,10 @@ public class TicTacToe {
     private final static Scanner scanner = new Scanner(System.in);
     private final static Random rand = new Random();
 
+
     public static void main(String[] args) {
+
+
 
         game();
 
@@ -28,7 +32,9 @@ public class TicTacToe {
         while (true) {
             humanHod();
             if (cheakWin(X)) {
+
                 System.out.println("You winner!");
+                printArr();
                 break;
             }
             if (ifFullTable()) {
